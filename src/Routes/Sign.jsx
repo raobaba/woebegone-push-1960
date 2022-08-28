@@ -1,4 +1,5 @@
 import styles from "../Components/Navbar.module.css";
+import { Login } from './../Components/Login';
 export const Sign = ()=>{
     return (
         <>
@@ -20,13 +21,16 @@ export const Sign = ()=>{
                            <button>Sign in with SAML SSO</button>
                        </div>
                        <p>--------------or,sign in with google---------------</p>
-                       <p>Email address</p>
+                        {/* <p>Email address</p> 
                        <input type="text" name="" id="" placeholder="e.g:- raobaba@gmail.com" />
                        <p>Password</p>
                        <input type="text" name="" id="" placeholder="Enter Your Password" />  <br />
                        <a href="sign.jsx">reset password</a> <br />
                        <p> <input type="checkbox" /> keep in signed in </p>
-                       <button>Sign</button>
+                       <button>Sign</button>  */}
+                      <div>
+                       <Login />
+                      </div>
                     </div>
                     <div className={styles.second}>
                         <p>HOTJAR GUIDES</p>

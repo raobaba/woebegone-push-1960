@@ -1265,6 +1265,9 @@
 .first>div{
   display: flex;
 }
+.first>div~div~div~div{
+  border: none;
+}
 
 .first>div>p{
   font-family :Roboto, Arial, sans-serif;
@@ -1402,4 +1405,27 @@
   border: none;
   color:RGBA(255, 255, 255, 0.89);
   background-color:RGB(28, 50, 134);
+}
+.login>button{
+  width: 340px;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 30px;
+  
+}
+.login>form>button{
+  width: 340px;
+  height: 50px;
+  border-radius: 5px;
+  margin-top: 20px;
+  background-color: rgb(42,88,193);
+  font-size: 18px;
+  color: #FFFFFF;
+}
+.login>form>div{
+  display: flex;
+}
+.input>input{
+  width: 330px;
+  height: 50px;
 }
