@@ -1,5 +1,7 @@
 import styles from "../Components/Navbar.module.css";
+import { useNavigate } from 'react-router-dom';
 export const Login = ()=>{
+  const navigate = useNavigate()
     const handleSubmit = e => {
        e.preventDefault();
        console.log(e.target.email.value);
@@ -14,9 +16,10 @@ export const Login = ()=>{
          e.target.email.value === "raorajan9576@gmail.com" &&
          e.target.password.value === "12345"
        ) {
-         alert("Successfully logged in");
+         alert("You have successfully signed up!");
          e.target.email.value = "";
          e.target.password.value = "";
+         navigate("/hotjar")
        } else {
          alert("Wrong email or password combination");
        }

@@ -1,6 +1,14 @@
 import styles from "../Components/Navbar.module.css";
 import { Video } from './Video';
+import { useEffect } from 'react';
 export const Hotjar = ()=>{
+    function useDocumentTitle() {
+        useEffect(() => {
+          document.title = "Hotjar:Heatmaps & behaviour analytics tools";
+        });
+      }
+      useDocumentTitle();
+    
     return (
         <>
         <div className={styles.hotjar}>
